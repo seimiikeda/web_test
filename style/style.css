@@ -2,6 +2,7 @@ body {
   font-family: "Sawarabi Mincho";
   margin: 0px;
   background-color: #1e1e1e;
+  color: #fff;
 }
 li {
   list-style: none;
@@ -47,7 +48,6 @@ li {
   text-decoration: none;
   color: inherit;
 }
-
 /*メニュー画面*/
 .l-header__food {
   background-image: url("../image/131528.jpg");
@@ -128,6 +128,7 @@ figcaption {
   display: flex;
   width: 50%;
   margin: auto;
+  padding: 0;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -135,7 +136,63 @@ figcaption {
   width: 200px;
   height: 200px;
 }
+/*スライドショー*/
+@keyframes infinity-scroll-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.scroll-infinity__list--right {
+  animation: infinity-scroll-right 80s infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+  width: calc(100vw / 6);
+}
+.scroll-infinity__item > img {
+  width: 100%;
+}
+.scroll-infinity {
+  margin-bottom: 100px;
+}
 
+.l-header__about {
+  background-image: url("../image/131525.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/*フッター*/
+.l-footer {
+  background-color: #772b2c;
+  height: 50px;
+}
+.l-footer__logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+}
+.l-footer__logo img {
+  width: 50px;
+  height: 50px;
+}
+.l-footer__p {
+  display: flex;
+}
 @media screen and (max-width: 768px) {
   .l-header__logo img {
     max-width: 90%;

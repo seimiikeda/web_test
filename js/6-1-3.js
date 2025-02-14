@@ -31,3 +31,6 @@ $(".l-header__slider").vegas({
 $(".l-header__food").vegas({
   overlay: true,
 });
+$(".l-header__about").vegas({
+  overlay: true,
+});
