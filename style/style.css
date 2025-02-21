@@ -18,14 +18,15 @@ html {
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /*トップ画面*/
 .l-header__item {
   color: #fff;
 }
-.l-header__item a:hover {
-  border-bottom: #fff solid 1.5px;
-  border-top: #fff solid 1.5px;
-}
+
 .l-header__item a {
   text-decoration: none;
   color: inherit;
@@ -35,37 +36,28 @@ li {
   height: 100vh;
 }
 .l-header__logo {
-  position: relative;
   width: 100vw;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .l-header__logo img {
-  position: absolute;
   margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  display: block;
 }
 .l-header__sublink {
-  background-color: #fff;
-  width: 40px;
-  height: 80px;
   font-size: 25px;
   color: #000;
-  text-align: center;
-  top: 50%;
   right: 20px;
   position: fixed;
-  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
 }
-.l-header__sublink a {
-  text-decoration: none;
-  color: inherit;
+.l-header__sublink img {
+  width: 100px;
+  height: 100px;
 }
 .l-header__sublink:hover {
-  background-color: #772b2c;
-  color: #fff;
+  transform: scale(1.2, 1.2);
 }
 /*メニュー画面*/
 .l-header__food {
@@ -146,6 +138,7 @@ figcaption {
   padding: 0;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 .l-main__subflex img {
   width: 200px;
@@ -173,7 +166,12 @@ figcaption {
   animation: infinity-scroll-right 80s infinite linear 0.5s both;
 }
 .scroll-infinity__item {
-  width: calc(100vw / 6);
+  width: calc(100vw / 4);
+}
+.scroll-infinity__item img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
 }
 .scroll-infinity__item > img {
   width: 100%;
@@ -200,10 +198,9 @@ figcaption {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-.l-about_contents {
   margin-bottom: 50px;
 }
+
 .l-about_contents img {
   width: 300px;
   height: 250px;
@@ -245,12 +242,35 @@ figcaption {
 }
 /*フッター*/
 .l-footer {
-  height: 50px;
+  height: 70px;
   width: 100%;
   background-color: #772b2c;
+  position: relative;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+a.l-footer__contact {
+  position: absolute;
+  display: block;
+  right: 20px;
+  width: 150px;
+  height: 35px;
+  border: #fff 1px solid;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.l-footer__contact p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+}
+a:hover.l-footer__contact {
+  color: #000;
+  background-color: #fff;
 }
 @media screen and (max-width: 900px) {
   .l-header__logo img {
@@ -348,6 +368,10 @@ figcaption {
   /* PC style */
   #menu__toggle {
     display: none;
+  }
+  .l-header__item a:hover {
+    border-bottom: #fff solid 1.5px;
+    border-top: #fff solid 1.5px;
   }
   .l-header__link {
     display: flex;
