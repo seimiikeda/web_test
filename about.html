@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>名護ステーキ</title>
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="icon" href="favicon.ico" id="favicon">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" href="favicon.ico" id="favicon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="apple-touch-icon-180x180.png"
+    />
     <link
       href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css"
       rel="stylesheet"
@@ -74,13 +78,8 @@
             <li class="l-header__item"><a href="index.html">HOME</a></li>
             <li class="l-header__item"><a href="menu.html">MENU</a></li>
             <li class="l-header__item"><a href="about.html">ABOUT</a></li>
-            <li class="l-header__item">
-              <a href="#">Language</a>
-              <ul>
-                <li><a href="about.html">日本語版</a></li>
-                <li><a href="en/about.html">English</a></li>
-              </ul>
-            </li>
+            <li class="l-header__item"><a href="index.html">日本語版</a></li>
+            <li class="l-header__item"><a href="en/index.html">English</a></li>
           </ul>
         </div>
         <div class="l-header__sublink">
@@ -111,48 +110,30 @@
       </div>
       <h1>概要</h1>
       <div class="l-about__contents2">
-        <ul class="l-about__pct">
-          <li class="l-about__pctitem">
-            <div>
-              <p>住所</p>
-            </div>
-            <div class="l-about__pctleft">
-              <p>沖縄県名護市東江5丁目8-20沖縄県名護市</p>
-            </div>
-          </li>
-          <li class="l-about__pctitem">
-            <div>
-              <p>電話番号</p>
-            </div>
-            <div class="l-about__pctleft">
-              <p>0980-43-9275</p>
-            </div>
-          </li>
-          <li class="l-about__pctitem">
-            <div>
-              <p>営業時間</p>
-            </div>
-            <div class="l-about__pctleft">
-              <p>17:00-22:00 年中無休</p>
-            </div>
-          </li>
-          <li class="l-about__pctitem">
-            <div>
-              <p>席数</p>
-            </div>
-            <div class="l-about__pctleft">
-              <p>4人席5つ　8人席2つ</p>
-            </div>
-            <li class="l-about__pctitem">
-              <div>
-                <p>支払い方法</p>
-              </div>
-              <div class="l-about__pctleft">
-                <p>VISA/MasterCard/AMEX/PayPay</p>
-              </div>
-            </li>
-          </li>
-        </ul>
+        <table class="l-about__table">
+          <tbody>
+            <tr>
+              <td>住所</td>
+              <td>沖縄県名護市東江5丁目8-20沖縄県名護市</td>
+            </tr>
+            <tr>
+              <td>電話番号</td>
+              <td>0980-43-9275</td>
+            </tr>
+            <tr>
+              <td>営業時間</td>
+              <td>17:00-22:00 年中無休</td>
+            </tr>
+            <tr>
+              <td>支払い方法</td>
+              <td>VISA・MasterCard・AMEX・PayPay</td>
+            </tr>
+            <tr>
+              <td>席数</td>
+              <td>4人席5つ 8人席2つ</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <h1>アクセス</h1>
       <div class="l-about_contents">
@@ -177,21 +158,28 @@
       <h1>駐車場</h1>
       <div class="l-about_contents">
         <div>
-          <p>
-            お店の前に２台と徒歩一分の場所にもあります。
-
-          </p>
+          <p>お店の横に4台分のスペース。</p>
         </div>
         <div>
-          <img src="image/noimage.png" alt="">
+          <img src="image/noimage.png" alt="" />
         </div>
       </div>
     </div>
     <footer class="l-footer">
+      <div class="l-footer__menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a
+            href="https://www.instagram.com/nago_steak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            class="l-footer__contact"
+          >
+            <img src="image/inst.png" alt="" /></li>
+        </ul>
+      </div>
       <small>© NAGO STEAK</small>
-      <a href="https://www.instagram.com/nago_steak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"  class="l-footer__contact">
-        <p>instagram</p>
-      </a>
     </footer>
     <script src="js/6-1-3.js"></script>
     <script src="js/5-4-1.js"></script>
